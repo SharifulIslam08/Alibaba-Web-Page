@@ -16,7 +16,7 @@
 
 }
 #container{
-    font-size: 14px;
+    /* font-size: 14px; */
     /* position: relative; */
     /* width: auto; */
     height: 100%;
@@ -41,7 +41,7 @@
 /*card*/
 #over_card{
     position: relative;
-    top: -50px;
+    top: -60px;
     /* z-index: 1000; */
     /* position: absolute; */
     /* margin-top: -60px; */
@@ -56,4 +56,34 @@
     width: 95%;
     /* height: 20%; */
 }
-/*zindex-button-card-section*/
+/*sticky-button-card-section*/
+#button-card-section{
+    margin: 0px 32px;
+}
+#body-items-section{
+    margin: 0px 32px;
+}
+/* #top_navber{
+    background-color: rgb(74, 30, 177);
+} */
+#top_navber_sell_hover{
+    display: none;
+    /* background-color: rgb(27, 206, 206); */
+    width: 235%;
+    left: 40%;
+
+}
+#top_navber_help_hover{
+    display: none;
+    background-color: rgb(70, 204, 204);
+    width: 135%;
+    left: 49%;
+}
+#top_navber:hover #top_navber_sell_hover {  
+    display: block;
+    /* background-color: rgb(62, 77, 77); */
+}
+#top_navber:hover #top_navber_help_hover {  
+    display: block;
+    /* background-color: rgb(62, 77, 77); */
+}

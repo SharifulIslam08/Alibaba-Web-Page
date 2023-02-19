@@ -13,13 +13,13 @@
   <section id="header_section">
     <div class="text-center">
       <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-      <div class="row mt-4">
+      <div style="font-size: 25px" class="row mt-4">
         <div class="col-md-5"></div>
         <div class="col-6 col-md-1">
-          <a href="#">Products</a>
+          <a style="text-decoration: none;" href="#">Products</a>
         </div>
         <div class="col-6 col-md-1">
-          <a href="#">Manufacturers</a>
+          <a style="text-decoration: none;" href="#">Manufacturers</a>
         </div>
         <div class="col-md-5"></div>
       </div>
@@ -72,14 +72,29 @@
       </div>
     
       <!-- Columns are always 50% wide, on mobile and desktop -->
-      <div class="row mt-3 border-top pt-3">
+      <div id="nav" class="row mt-3 border-top pt-3 position-relative">
         <div class="col-7 d-flex justify-content-around">
           <a href="#">Categories <i class="bi bi-chevron-down"></i></a>
           <a href="#">Ready to Ship <i class="bi bi-chevron-down"></i></a>
           <a href="#">Personal Protective E... <i class="bi bi-chevron-down"></i></a>
           <a href="#">Buyer Central <i class="bi bi-chevron-down"></i></a>
-          <a href="#">Sell on Alibaba.com <i class="bi bi-chevron-down"></i></a>
-          <a href="#">Help <i class="bi bi-chevron-down"></i></a>
+          <div id="top_navber">
+            <a href="#">Sell on Alibaba.com <i class="bi bi-chevron-down"></i></a>
+            <div id="top_navber_sell_hover" class="position-absolute m-3 p-3 w-auto bg-light">
+              <p>For global suppliers</p>
+              <p>For Chinese suppliers</p>
+              <p>Partner Program</p>
+            </div>
+          </div>
+          <div id="top_navber">
+            <a href="#">Help <i class="bi bi-chevron-down"></i></a>
+            <div id="top_navber_help_hover" class="position-absolute m-2 p-3 bg-light w-auto shadow rounded">
+              <p>For global suppliers</p>
+              <p>For Chinese suppliers</p>
+              <p>Partner Program</p>
+              <p>Partner Program</p>
+            </div>
+          </div>
         </div>
         <div class="col-2"></div>
         <div class="col-3">
@@ -87,6 +102,17 @@
           <a href="#">English-USD <i class="bi bi-chevron-down"></i></a>
           <a href="#">Ship to: <img src="#"><i class="bi bi-chevron-down"></i></a>
         </div>
+        <!-- <div id="top_navber_sell_hover" class="position-absolute mt-4 pt-3 w-auto">
+          <p>For global suppliers</p>
+          <p>For Chinese suppliers</p>
+          <p>Partner Program</p>
+        </div> -->
+        <!-- <div id="top_navber_help_hover" class="position-absolute mt-4 pt-3 bg-light w-auto">
+          <p>For global suppliers</p>
+          <p>For Chinese suppliers</p>
+          <p>Partner Program</p>
+          <p>Partner Program</p>
+        </div> -->
       </div>
     </div>
   </section>
@@ -99,11 +125,11 @@
               <h2 class="text-center text-light pt-5">Sourse factory-direct and get customizesd products</h2>
             </div>
             <div class="row" style="margin-left: 20px; margin-right: 20px;">
-              <div class="col-sm-3 mb-0 bg-danger">
-                <div id="over_card" class="card">
-                  <div class="card-body" style="height: 500px;">
+              <div class="col-sm-3 shadow p-3 mb-4 bg-white rounded mb-0">
+                <div id="over_card" class="card border-0">
+                  <div class="card-body">
                     <div>
-                      <h5 class="card-title">Source by category</h5>
+                      <h5 class="card-title m-4">Source by category</h5>
                      <img src="img/Source by category/1.png"><a href="#" class=""> Consumer Electronics <i class="bi bi-chevron-compact-right"></i></a><br>
                      <img src="img/Source by category/2.png"><a href="#" class=""> Apparel <i class="bi bi-chevron-compact-right"></i></a><br>
                      <img src="img/Source by category/3.png"><a href="#" class=""> Vehicle Parts & Accessories <i class="bi bi-chevron-compact-right"></i></a><br>
@@ -116,27 +142,27 @@
                 </div>
               </div>
               <div class="col-sm-3">
-                <div id="over_card" class="card">
-                  <div class="card-body" style="height: 500px;">
-                    <div class="card mb-3">
+                <div id="over_card" class="card border-0">
+                  <div class="card-body">
+                    <div class=" shadow p-3 mb-4 bg-white rounded border-bottom border-0 border-top-0 border-left border-0 border-right border-0 card mb-3">
                       <div class="card-body">
                         <h5 class="card-title">Get samples</h5>
-                        <div class="d-flex">
-                          <div>
+                        <div class="d-flex m-0">
+                          <div class="mb-0">
                             <img class=" w-100 h-75" src="img/cards/1.png">
                             <p class="card-text text-center"><small class="text-muted">Newly released</small></p>
                           </div>
                           <div>
                             <img class="w-100 h-75" src="img/cards/2.png">
-                            <p class="card-text text-center"><small class="text-muted">Trending</small></p>
+                            <p class="card-text text-center mb-0"><small class="text-muted">Trending</small></p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="card mb-3">
-                      <div class="card-body mb-4 ">
-                        <div class="d-flex">
-                          <img src="img/cards/3.gif">
+                    <div class=" card border-bottom-0 border-top border-1 border-left border-0 border-right border-0 shadow-sm">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center">
+                          <img class="m-1" src="img/cards/3.gif">
                           <h5 class="card-title">  Factory LIVE Q&A</h5>
                         </div>
                         <div class="d-flex mt-3">
@@ -154,9 +180,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-3">
-                <div id="over_card" class="card">
-                  <div class="card-body" style="height: 500px;">
+              <div class="col-sm-3 shadow p-3 mb-4 bg-white rounded">
+                <div id="over_card" class="card border-0">
+                  <div class="card-body mt-3">
                     <h5 class="card-title">Top-ranking manufacturers</h5>
                     <div class="d-flex">
                       <div>
@@ -182,32 +208,41 @@
                 </div>
               </div>
               <div class="col-sm-3">
-                <div id="over_card" class="card">
-                  <div class="card-body" style="height: 50%;">
-                    <div class="card mb-3">
+                <div id="over_card" class="card border-0">
+                  <div class="card-body">
+                    <div class="card mb-3 border-bottom border-0 border-top-0 border-left border-0 border-right border-0 shadow p-3 mb-4 bg-white rounded">
                       <div class="card-body mb-2">
-                        <p>Welcome!</p>
-                        <h5 class="card-title">Guest</h5>
-                        <a href="#" class="btn btn-outline-dark">sign in</a>
-                        <a href="#" class="btn btn-outline-dark">Join for free</a>
+                        <div class="d-flex align-items-center">
+                          <i style="font-size: 45px; margin-right: 10px;" class="bi bi-person-circle"></i>
+                          <div>
+                            <p class="m-0">Welcome!</p>
+                            <h5 class="card-title m-0">Guest</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-around mt-4">
+                          <a href="#" class="btn btn-outline-dark w-50 m-2">sign in</a>
+                          <a href="#" class="btn btn-outline-dark w-50 m-2">Join for free</a>
+                        </div>
                       </div>
                     </div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h4 class="card-title">One request, multiple quotes</h4>
-                        <div>
-                          <h5 class="card-title">150,000+</h5>
-                          <p class="card-text">Active suppliers</p>
+                    <div class="card border-bottom-0 border-top border-1 border-left border-0 border-right border-0">
+                      <div class="card-body text-center">
+                        <h4 class="card-title mb-4">One request, multiple quotes</h4>
+                        <div class="d-flex mb-4">
+                          <div>
+                            <h5 class="card-title">150,000+</h5>
+                            <p class="card-text">Active suppliers</p>
+                          </div>
+                          <div>
+                            <h5 class="card-title"> <22h</h5>
+                            <p class="card-text">Average response time</p>
+                          </div>
+                          <div>
+                            <h5 class="card-title">7400</h5>
+                            <p class="card-text">Industries</p>
+                          </div>
                         </div>
-                        <div>
-                          <h5 class="card-title"> <22h</h5>
-                          <p class="card-text">Average response time</p>
-                        </div>
-                        <div>
-                          <h5 class="card-title">7400</h5>
-                          <p class="card-text">Industries</p>
-                        </div>
-                        <a href="#" class="btn btn-outline-dark">Request for Quotation</a>
+                        <a href="#" class="btn btn-outline-dark w-100">Request for Quotation</a>
                       </div>
                     </div>
                   </div>
@@ -216,8 +251,8 @@
             </div>
           </div>
         </section>
-        <section id="button-card-section" class="mt-1 sticky-top ">
-          <div class="card text-center m-1 shadow p-3 mb-5 bg-white rounded ">
+        <section id="button-card-section" class="mt-0 sticky-top ">
+          <div class="card text-center m-0 shadow p-3 mb-4 bg-white rounded ">
             <div class="card-header d-flex justify-content-around">
               <a href="#">All Categories</a>
               <a href="#">Agriculture</a>
@@ -243,7 +278,7 @@
             </div>
           </div>
         </section>
-        <section id="body-items-section" class="mt-5">
+        <section id="body-items-section" class="mt-4">
           <div class="row">
             <div class="col-sm-4">
               <div class="card border-0">
