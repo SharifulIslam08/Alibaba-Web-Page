@@ -2019,11 +2019,11 @@ progress {
   cursor: pointer;
 }
 .form-control:focus {
-  color: #212529;
-  background-color: #fff;
-  border-color: #86b7fe;
+  color: #d5e1ec;
+  background-color: #fffefe;
+  border-color: transparent !important;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(238, 91, 7, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(94, 68, 54, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -2203,7 +2203,7 @@ textarea.form-control-lg {
   }
 }
 .form-select:focus {
-  border-color: #86b7fe;
+  border-color: #b2c9eb;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }

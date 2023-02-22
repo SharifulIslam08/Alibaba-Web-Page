@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <!-- <link rel="stylesheet" href="copy_bootstrap/bootstrap_copy.css"> -->
+    <link rel="stylesheet" href="copy_bootstrap/bootstrap_copy.css">
     
 </head>
 <body>
@@ -23,7 +23,7 @@
           <a style="text-decoration: none;" href="#">Products</a>
         </div>
         <div class="col-6 col-md-1">
-          <a style="text-decoration: none;" href="#">Manufacturers</a>
+          <a style="text-decoration: none;" href="#">Seller</a>
         </div>
         <div class="col-md-5"></div>
       </div>
@@ -84,11 +84,21 @@
             </div>
           </div>
 
-          <div class="">
+          <div id="orders" class="">
             <a href="#" class=" d-flex flex-column align-items-center">
               <i style="font-size: 120%;" class="bi bi-sort-up"></i>
               <span>Orders</span>
             </a>
+            <div id="orders_hover" class="position-absolute m-4 p-3 bg-light align-items-start text-start shadow-lg p-3 mb-5 bg-body rounded">
+              <h5><img src="#">Trade Assurance</h5><label><small>Learn more</small></label>
+              <p>portects your Alibaba.com order</p>
+              <ul>
+                <p>Trade Assurance ensures:</p>
+                <li>Product quality</li>
+                <li>On-timew shipment</li>
+              </ul>
+              <a class="btn bg-success w-100" href="#">Order with Trade Assurance</a>
+            </div>
           </div>
 
           <div id="cart" class="position-relative">
@@ -496,13 +506,13 @@
         <section id="button-card-section" class="mt-0 sticky-top ">
           <div class="card text-center m-0 shadow p-3 mb-4 bg-white rounded ">
             <div class="card-header d-flex justify-content-around">
-              <a href="#">All Categories</a>
-              <a href="#">Agriculture</a>
-              <a href="#">Food & Beverage</a>
-              <a href="#">Apparel</a>
-              <a href="#">Fabric & Textile Raw Material</a>
-              <a href="#">Electrical Equipment & Supplies</a>
-              <a class="btn btn-check" href="#">View more</a>
+              <h4><a href="#">All Categories</a></h4>
+              <h4><a href="#">Agriculture</a></h4>
+              <h4><a href="#">Food & Beverage</a></h4>
+              <h4><a href="#">Apparel</a></h4>
+              <h4><a href="#">Fabric & Textile Raw Material</a></h4>
+              <h4><a href="#">Electrical Equipment & Supplies</a></h4>
+              <h4><a class="btn btn-check" href="#">View more</a></h4>
             </div>
             <div class="card-body">
               <div class="row">
