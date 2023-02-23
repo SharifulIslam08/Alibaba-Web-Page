@@ -39,7 +39,7 @@ a{
 }
 #foot{
     grid-column: 1/-1;
-    background-color:rgb(177, 145, 145);
+    /* background-color:rgb(177, 145, 145); */
 }
 /* header section start */
 
